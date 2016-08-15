@@ -1,0 +1,34 @@
+FORMAT: 1A
+HOST: http://polls.apiblueprint.org/
+
+# getAllConfigs
+
+Gets the user all the saved cconfigurations.
+
+## Questions Collection [/configs]
+
+### List All Questions [GET]
+
++ Response 200 (application/json)
+
+        [
+            {
+                "tenantID": "tenant_01",
+                "userName": "manan_d",
+                "configs": [
+                    {
+                        "rs": "rs1",
+                        "id": "config1"
+                    }, {
+                         "rs": "rs2",
+                        "id": "config2"
+                    }, {
+                         "rs": "rs3",
+                        "id": "config3"
+                    }, {
+                         "rs": "rs4",
+                        "id": "config4"
+                    }
+                ]
+            }
+        ]
